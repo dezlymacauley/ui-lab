@@ -48,3 +48,15 @@ const ninjaOne: NinjaData = {
 
 <!-- Displys the hobbies as a comma separate string -->
 <p>ninjaOne's hobbies are {ninjaOne.hobbies.join(", ")}</p>
+
+<!--
+  How to create an `li` element for each element 
+  in the `hobbies` array.
+-->
+<ul>
+  {ninjaOne.hobbies.map((e) => <li>{e}</li>)}
+</ul>
+
+<p>ninjaOne's village is {ninjaOne.address.village}</p>
+
+<p>ninjaOne's street is {ninjaOne.address.street}</p>
