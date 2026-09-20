@@ -1,0 +1,50 @@
+---
+/* 
+
+Every thing between the `---` must be valid TypeScript or JavaScript, 
+code that runs server side.
+
+Nothing must be above the first `---` or the code won't work.
+
+Every thing outside of the `---` is HTML code tht runs on the client side.
+
+*/
+
+const userName: string = "Dezly Macauley";
+
+type NinjaData = {
+  name: string;
+  age: number;
+  hobbies: string[];
+  address: {
+    village: string;
+    street: string;
+  };
+};
+
+const ninjaOne: NinjaData = {
+  name: "Mei",
+  age: 30,
+  hobbies: ["swimming", "yoga"],
+  address: {
+    village: "Hidden Mist",
+    street: "21 Suiton"
+  }
+};
+---
+
+<h1>Hello World</h1>
+
+<!--
+  Inside of the curly braces {}, you can add JavaScript expressions.
+-->
+<p>1 plus 2 is {1 + 2}</p>
+
+<p>Welcome {userName}</p>
+
+<p>ninjaOne's name is {ninjaOne.name} </p>
+
+<p>ninjaOne's age is {ninjaOne.age} </p>
+
+<!-- Displys the hobbies as a comma separate string -->
+<p>ninjaOne's hobbies are {ninjaOne.hobbies.join(", ")}</p>
