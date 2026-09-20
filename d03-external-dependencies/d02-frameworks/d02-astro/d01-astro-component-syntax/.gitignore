@@ -1,0 +1,6 @@
+# Build Output
+.astro/
+dist/
+
+# Project Dependencies
+node_modules/
