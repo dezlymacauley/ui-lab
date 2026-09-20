@@ -1,10 +1,18 @@
-# Flat route structure
+# File-base route structure
 _______________________________________________________________________________
 
 - The home page of your website is `src/pages/index.astro`
 
 - To add a new page, create a `.astro`, or `.html`, or `.md` file 
 to the `src/pages` directory
+
+```
+├── src
+│   └── pages
+│       ├── about.astro
+│       ├── index.astro
+│       └── trending-posts.md
+```
 _______________________________________________________________________________
 
 This is `src/pages/index.astro` (http://localhost:4321/)
@@ -29,14 +37,4 @@ This is `src/pages/trending-posts.md` (http://localhost:4321/trending-posts)
 ```markdown
 # Trending Posts
 ```
-_______________________________________________________________________________
-
-This is `src/pages/news.html` (http://localhost:4321/news)
-```html
-<h1>News</h1>
-```
-
-##### Note:
-- HTML files don't get hot reloading
-- I'd avoid using them since `.astro` files support html anyways.
 _______________________________________________________________________________
