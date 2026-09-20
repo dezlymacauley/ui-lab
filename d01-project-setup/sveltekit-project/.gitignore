@@ -1,0 +1,5 @@
+# Build Output
+.svelte-kit
+
+# Project Dependencies
+node_modules
