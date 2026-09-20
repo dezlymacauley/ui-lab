@@ -1,0 +1,9 @@
+---
+import ninjas from "../../ninja-data/ninjas.json";
+---
+
+<ul>
+  {ninjas.map((e) => (
+    <li>{e.name}</li>
+  ))}
+</ul>

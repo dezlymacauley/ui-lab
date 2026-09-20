@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Mei",
+    "age": 30,
+    "hobbies": ["swimming", "yoga"],
+    "address": {
+      "village": "Hidden Mist",
+      "street": "21 Suiton"
+    }
+  },
+  {
+    "name": "Kaito",
+    "age": 27,
+    "hobbies": ["meditation", "fishing"],
+    "address": {
+      "village": "Hidden Leaf",
+      "street": "12 Senbon"
+    }
+  },
+  {
+    "name": "Akari",
+    "age": 24,
+    "hobbies": ["reading", "archery"],
+    "address": {
+      "village": "Hidden Sand",
+      "street": "8 Kazekage"
+    }
+  },
+  {
+    "name": "Ren",
+    "age": 32,
+    "hobbies": ["cooking", "training"],
+    "address": {
+      "village": "Hidden Cloud",
+      "street": "15 Raiton"
+    }
+  }
+]
