@@ -1,0 +1,13 @@
+[env]
+BROWSER = "chromium"
+
+[tools]
+bun = "latest"
+eza = "latest"
+
+[tasks.tree]
+description = "🌲 Display a tree diagram overview of the project structure"
+quiet = true
+run = """
+eza --tree --git-ignore
+"""
