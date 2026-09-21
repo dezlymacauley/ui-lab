@@ -1,1 +1,1 @@
-<h1>SvelteKit Project</h1>
+<h1>Svelte Component Syntax</h1>
