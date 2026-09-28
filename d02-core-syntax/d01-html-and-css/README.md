@@ -21,3 +21,11 @@ Then open the directory in another terminal and run this command
 run
 ```
 _______________________________________________________________________________
+
+## Useful Resources
+
+Convert png files to SVG
+```
+https://imagen-ai.com/tools/png-to-svg-converter/
+```
+_______________________________________________________________________________
