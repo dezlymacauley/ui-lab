@@ -3,5 +3,4 @@
 </script>
 
 <CustomParagrph />
-
 <p>This is a paragraph</p>

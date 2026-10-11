@@ -1,5 +1,5 @@
 [env]
-BROWSER = "chromium"
+BROWSER = "firefox"
 
 [tools]
 bun = "latest"
