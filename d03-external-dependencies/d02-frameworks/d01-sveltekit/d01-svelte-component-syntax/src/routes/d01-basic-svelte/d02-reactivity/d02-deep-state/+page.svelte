@@ -1,11 +1,13 @@
 <script lang="ts">
-  let count: number = $state(0);
+  let list_of_numbers: Array<number> = $state([1, 2, 3, 4]);
 
-  function increaseCount() {
-    count++;
+  function addNumber() {
+    const newNumber = list_of_numbers.length + 1;
+    list_of_numbers.push(newNumber);
   }
+
 </script>
 
-<p>count is set to {count}</p>
+<p>{list_of_numbers.join(" + ")} = ...</p>
 
-<button onclick={increaseCount}>Click Me</button>
+<button onclick={addNumber}>Click Me</button>
