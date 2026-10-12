@@ -5,9 +5,13 @@ BROWSER = "firefox"
 bun = "latest"
 eza = "latest"
 
-[tasks.tree]
+[tasks.structure]
 description = "🌲 Display a tree diagram overview of the project structure"
 quiet = true
 run = """
 eza --tree --git-ignore
 """
+
+[shell_alias]
+run = "bun run dev"
+structure = "mise run structure"
