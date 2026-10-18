@@ -3,7 +3,7 @@
   "configVersion": 1,
   "workspaces": {
     "": {
-      "name": "bun-astro-project",
+      "name": "bun-astro-svelte-project",
       "dependencies": {
         "@astrojs/svelte": "^9.1.0",
         "astro": "^7.4.0",

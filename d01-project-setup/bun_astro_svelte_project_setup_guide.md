@@ -3,13 +3,13 @@ _______________________________________________________________________________
 
 Create the project directory
 ```bash
-mkdir bun-astro-project
+mkdir bun-astro-svelte-project
 ```
 _______________________________________________________________________________
 
 Enter the project directory
 ```bash
-cd bun-astro-project
+cd bun-astro-svelte-project
 ```
 _______________________________________________________________________________
 
@@ -179,6 +179,80 @@ dev = "mise run dev"
 format = "mise run format"
 setup = "mise run setup"
 structure = "mise run structure"
+```
+_______________________________________________________________________________
+
+Replace the contents of `src/pages/index.astro` with this
+```astro
+---
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Home</title>
+	</head>
+	<body>
+    <h1>Bun Astro Svelte Project</h1>
+	</body>
+</html>
+```
+_______________________________________________________________________________
+
+Create a directory for Svelte components
+```bash
+mkdir -p src/svelte-components
+```
+_______________________________________________________________________________
+
+Create a Svelte component
+```bash
+touch src/svelte-components/Counter.svelte
+```
+
+Add this to the `src/svelte-components/Counter.svelte` file
+```svelte
+<script lang="ts">
+  let counter: number = $state(0);
+
+  function increaseCounter() {
+    counter++;
+  }
+
+</script>
+
+<p>Times Clicked: {counter}</p>
+
+<button onclick={increaseCounter}>Click Me</button>
+```
+_______________________________________________________________________________
+
+Create another astro route
+```bash
+touch src/pages/svelte-example.astro
+```
+
+Add this to the `src/pages/svelte-example.astro` file to use the Svelte component
+```svelte
+---
+import Counter from "../svelte-components/Counter.svelte";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Svelte Example</title>
+	</head>
+	<body>
+    <h1>Svelte Example</h1> 
+    <Counter client:load />
+	</body>
+</html>
 ```
 _______________________________________________________________________________
 
