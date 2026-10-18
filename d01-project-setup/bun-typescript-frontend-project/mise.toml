@@ -1,0 +1,55 @@
+[tools]
+bun = "latest"
+eza = "latest"
+#______________________________________________________________________________
+
+[tasks.build]
+description = "📦 bun run build | alias = build"
+quiet = true
+run = """
+bun run build
+"""
+
+[tasks.clean]
+description = "🧼 bun run clean | alias = clean"
+quiet = true
+run = """
+bun run clean
+"""
+
+[tasks.dev]
+description = "🍞 bun run dev | alias = dev"
+quiet = true
+run = """
+bun run dev
+"""
+
+[tasks.format]
+description = "📜 bun run format | alias = format"
+quiet = true
+run = """
+bun run format
+"""
+
+[tasks.setup]
+description = "🚀 bun run setup | alias = setup"
+quiet = true
+run = """
+bun run setup
+"""
+
+[tasks.structure]
+description = "🌲 View the project structure"
+quiet = true
+run = """
+eza --tree --git-ignore
+"""
+#______________________________________________________________________________
+
+[shell_alias]
+build = "mise run build"
+clean = "mise run clean"
+dev = "mise run dev"
+format = "mise run format"
+setup = "mise run setup"
+structure = "mise run structure"

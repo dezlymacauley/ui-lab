@@ -1,4 +1,4 @@
-# Bun TypeScript Backend Project Setup Guide
+# Bun TypeScript Frontend Project Setup Guide
 _______________________________________________________________________________
 
 Create the project directory
@@ -69,7 +69,7 @@ trailingComma = "all"
 ```
 _______________________________________________________________________________
 
-Replace the contents of `package.json` with this
+Replace the contents of `package.json` file with this
 ```json
 {
   "scripts": {
@@ -85,7 +85,7 @@ Replace the contents of `package.json` with this
 ```
 _______________________________________________________________________________
 
-Replace the contents of `package.json` with this
+Replace the contents of `tsconfig.json` with this
 ```json
 {
   "compilerOptions": {

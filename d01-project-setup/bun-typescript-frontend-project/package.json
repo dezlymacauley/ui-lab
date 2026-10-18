@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "build": "bun build ./src/index.html --outdir dist",
+    "clean": "rm -rf dist node_modules",
+    "dev": "bun src/index.html",
+    "format": "bun fmt",
+    "setup": "bun run clean && bun install"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}
