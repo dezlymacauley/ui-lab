@@ -1,9 +1,0 @@
-{
-  "scripts": {
-    "clean": "rm -rf node_modules",
-    "dev": "bun run src/index.ts"
-  },
-  "devDependencies": {
-    "@types/bun": "latest"
-  }
-}

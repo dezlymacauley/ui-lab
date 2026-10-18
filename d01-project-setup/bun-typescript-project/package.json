@@ -1,0 +1,11 @@
+{
+  "scripts": {
+		"clean": "rm -rf .svelte-kit node_modules",
+    "dev": "bun src/index.ts",
+		"format": "bun fmt",
+		"setup": "bun run clean && bun install"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}
