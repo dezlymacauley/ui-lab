@@ -1,15 +1,15 @@
-# Bun TypeScript Project Setup Guide
+# Bun TypeScript Backend Project Setup Guide
 _______________________________________________________________________________
 
 Create the project directory
 ```bash
-mkdir bun-typescript-project
+mkdir bun-typescript-backend-project
 ```
 _______________________________________________________________________________
 
 Enter the project directory
 ```bash
-cd bun-typescript-project 
+cd bun-typescript-backend-project 
 ```
 _______________________________________________________________________________
 
