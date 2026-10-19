@@ -1,39 +1,33 @@
 <script lang="ts">
-  let list_of_numbers: Array<number> = $state([1, 2, 3, 4]);
-  let total: number = $derived(list_of_numbers.reduce((t, n) => t + n, 0));
+  let elapsed: number = $state(0);
+  let interval: number = $state(1000);
 
-  function addNumber() {
-    const newNumber = list_of_numbers.length + 1;
-    list_of_numbers.push(newNumber);
-
-    //_________________________________________________________________________
-
-    // EXAMPLE: 1 => $state.snapshot()
-
-    // Use `$state.snapshot()` when you want to check the state of a variable
-    // that is wrapped in a `$derived()` rune.
-    // console.log($state.snapshot(list_of_numbers));
-
-    //_________________________________________________________________________
+  function doubleInterval() {
+    // This is a shorthand for:
+    // interval = interval * 2
+    interval *= 2;
   }
 
-  // EXAMPLE: 2 => $inspect().with()
+  function halveInterval() {
+    // This is a shorthand for:
+    // interval = interval / 2
+    interval /= 2;
+  }
 
-  // This will add a label so that it is easier to see in dev tools:
-  // $inspect(list_of_numbers).with((type, value) => {
-  //   console.log("list_of_numbers:", type, value);
-  // });
+  $effect(() => {
+    const id = setInterval(() => {
+      elapsed += 1;
+    }, interval);
 
-  // EXAMPLE: 3 => $inspect() 
-  
-  // This will show a `stack trace` so that you can see what 
-  // caused the variable to update.
-  $inspect(list_of_numbers);
+    return () => {
+      clearInterval(id);
+    };
 
+  });
 </script>
 
-fffs
+<button onclick={halveInterval}>speed up</button>
+<button onclick={doubleInterval}>slow down</button>
 
-<p>{list_of_numbers.join(" + ")} = {total}</p>
-
-<button onclick={addNumber}>Click Me</button>
+<p>elapsed: {elapsed} milliseconds</p>
+<p>interval: {interval} milliseconds</p>
