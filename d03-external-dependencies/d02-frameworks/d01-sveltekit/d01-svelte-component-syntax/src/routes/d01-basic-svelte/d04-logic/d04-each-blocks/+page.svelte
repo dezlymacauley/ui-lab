@@ -19,7 +19,8 @@
   <!-- 
     This will create a button for each element in the `colors` list
 
-    NOTE: Use this only when you have a list that does not change.
+    NOTE: Use this only when you have a fixed list of element 
+    that does not change, during the runtime of the program
 
   -->
   {#each colors as element}
