@@ -1,11 +1,6 @@
 <script lang="ts">
-  interface Props {
-    displayName: string;
-    userName: string;
-    highScore: string;
-  }
-
-  let { displayName, userName, highScore }: Props = $props();
+  import type { PlayerInfoCardProps } from "./player_info_card_types";
+  let { displayName, userName, highScore }: PlayerInfoCardProps = $props();
 </script>
 
 <ul>
